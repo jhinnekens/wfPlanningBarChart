@@ -1,0 +1,82 @@
+div
+{
+    cursor: default;
+}
+
+.barChart {
+    width: 100%;
+    height: 100%;
+    position:relative;
+    overflow-y:auto;
+  }
+  
+  .barChart-ordinate {
+    position:absolute;
+    width: 2px;
+    background-color:#333;
+    left:20%;
+    height:calc(100% - 4px);
+    top:2px;
+  }
+  
+  .barChart-Element {
+    margin: 5px;
+    min-height: 20px;
+
+  }
+
+  .barChart-Element-Aligner /* to allow vertical-align to work */
+  {
+    height:100%;
+    width:0px;
+    
+  }
+
+  .barChart-Element div {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .barChart-Element-legend {
+    width:20%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 13px;
+  }
+  .barChart-Element-bar {
+    width:60%;
+    font-size: 0px;
+    height: 80%;
+    min-height: 15px;
+    max-height: 45px;
+
+  }
+  .barChart-Element-inner
+  {
+    height:100%
+  }
+  .barChart-Element-inner:hover {
+  opacity: .65;
+  cursor:pointer;
+    transform: scale(1,1.15);
+    transition-duration: 250ms;
+  }
+
+  
+  .barChart-Element-innerText
+  {
+    padding-left: 4px;
+    font-size: 14px;
+  }
+
+  
+  .colorGood
+  {
+    color: green;
+  }
+  
+  .colorBad
+  {
+    color: red;
+  }

@@ -1,0 +1,117 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Category1",
+            "name": "category1",
+            "displayNameKey": "Visual_Category",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Valeur/Taux Ferme",
+            "name": "Chargeable",
+            "displayNameKey": "Visual_Category3",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Valeur/Taux previs",
+            "name": "Previs",
+            "displayNameKey": "Visual_Category4",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Budget",
+            "name": "Budget",
+            "displayNameKey": "Visual_Category5",
+            "kind": "Measure"
+        }
+    ],
+    "objects": {
+        "dataPoint": {
+            "properties": {
+                "colorFerme": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "colorPrevis": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "colorBudgetGood": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "colorBudgetBad": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "ValueType": {
+                    "type" : {
+                        "enumeration": [
+                            {
+                                "value": "0"
+                            },
+                            {
+                                "value": "1"
+                            },
+                            {
+                                "value": "2"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+
+    "dataViewMappings": [
+        {
+            "table": {
+                "rows": {
+                    "select": [
+                        {
+                            "for": {
+                                "in": "category1"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "Chargeable"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "Previs"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "Budget"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "privileges": []
+}
