@@ -28,7 +28,9 @@ div {
   vertical-align: middle;
 }
 .barChart-Element-legend {
-  width: 20%;
+  width: 25%;
+  text-align: right;
+  padding-right: 5px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -37,7 +39,7 @@ div {
 .barChart-Element-bar {
   width: 60%;
   font-size: 0px;
-  height: 80%;
+  height: 65%;
   min-height: 15px;
   max-height: 45px;
 }
