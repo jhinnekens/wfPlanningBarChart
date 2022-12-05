@@ -53,13 +53,13 @@ class DataPointCardSettings extends FormattingSettingsCard {
     colorBudgetGood = new formattingSettings.ColorPicker({
         name: "colorBudgetGood",
         displayName: "Couleur du Budget Good",
-        value: { value: "#00FF00" }
+        value: { value: "#21992D" }
     });
 
     colorBudgetBad = new formattingSettings.ColorPicker({
-        name: "colorBudgetGood",
+        name: "colorBudgetBad",
         displayName: "Couleur du Budget Bad",
-        value: { value: "#FF0000" }
+        value: { value: "#C52A1A" }
     });
 
     ValueType = new formattingSettings.ItemDropdown({
