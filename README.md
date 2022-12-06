@@ -13,4 +13,4 @@ Permet de réaliser les graphiques de la page occupation du worforce planning. P
 ## Installation
 
 - Cloner le git en local
-- executer la commande "npm install" pour importer les dépendance
+- executer la commande "npm install" pour importer les dépendances
