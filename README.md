@@ -8,7 +8,7 @@ Permet de réaliser les graphiques de la page occupation du worforce planning. P
 
 - Node.js (il faut pouvoir exectuer la commande npm)
 - PBIVIZ => La version utilisée pour l'app est 5.1
-- Certificat de PBIVIZ installé pour pouvoir runner la commande "pbibiz Start"
+- Certificat de PBIVIZ installé pour pouvoir runner la commande "pbiviz Start"
 
 ## Installation
 
