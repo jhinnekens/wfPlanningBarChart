@@ -23,6 +23,12 @@
             "name": "Budget",
             "displayNameKey": "Visual_Category5",
             "kind": "Measure"
+        },
+        {
+            "displayName": "PrevFerme",
+            "name": "PrevFerme",
+            "displayNameKey": "Visual_Category6",
+            "kind": "Measure"
         }
     ],
     "objects": {
@@ -106,6 +112,11 @@
                         {
                             "for": {
                                 "in": "Budget"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "PrevFerme"
                             }
                         }
                     ]

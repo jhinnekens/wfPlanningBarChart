@@ -112,7 +112,8 @@ export class Visual implements IVisual {
             dataRow.Chargeable = row[tableDataView.columns.filter((d) => d.roles.Chargeable != undefined )[0].index];
             dataRow.Previs = row[tableDataView.columns.filter((d) => d.roles.Previs != undefined )[0].index];
             dataRow.Budget = row[tableDataView.columns.filter((d) => d.roles.Budget != undefined )[0].index];
-           
+            dataRow.PrevFerme = row[tableDataView.columns.filter((d) => d.roles.PrevFerme != undefined )[0].index];
+
             TableData.push(dataRow);
 
             console.log(dataRow);
@@ -206,8 +207,14 @@ export class Visual implements IVisual {
           barChartElementBudget.setAttribute("style", "color:" + colorBudgetGood);
           
           let sign  = d.Budget > d.Chargeable ? '▼-' : '▲+';
-          barChartElementBudget.appendChild(document.createTextNode(sign + format(Math.abs(d.Chargeable-d.Budget))));
-  
+          if (d.PrevFerme=="Ferme")  // si la valeur du Slicer est égale à "Ferme"
+           barChartElementBudget.appendChild(document.createTextNode(sign + format(Math.abs(d.Chargeable-d.Budget))));
+          else if (d.PrevFerme=="Prévisionnel")  // si la valeur du Slicer est égale à "Prévisionnel"
+           barChartElementBudget.appendChild(document.createTextNode(sign + format(Math.abs(d.Previs-d.Budget))));
+          else // si la valeur du Slicer est égale à "Les deux"
+           barChartElementBudget.appendChild(document.createTextNode(sign + format(Math.abs((d.Chargeable+d.Previs)-d.Budget))));
+
+
         }
 
 
